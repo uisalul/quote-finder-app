@@ -45,7 +45,7 @@ const App = () => {
         },
       },
     };
-    const apiKey = "AIzaSyAR-t1Br57MJOfAiqfFrUlrYKr--lMr3lI"; // Canvas will provide this.
+    const apiKey = process.env.VITE_API_KEY // Canvas will provide this.
     let apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
     let responseData = null;
